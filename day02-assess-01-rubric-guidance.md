@@ -1,10 +1,12 @@
 # Rubric — Lab #17: Build Multi-Memory Agent với LangGraph
 
-**Mục đích:** Chấm bài Lab #17 bản 2 giờ, đúng theo slide.  
+**Mục đích:** Chấm bài Lab #17 bản 2 giờ.  
 **Tổng điểm:** 100 điểm.  
-**Hình thức nộp:** Mỗi cá nhân nộp source/notebook + data files + `BENCHMARK.md`.
+**Hình thức nộp:** Mỗi học viên nộp riêng source/notebook + data files + `BENCHMARK.md`.
 
 > Lab #17 chấm theo mục tiêu: agent có full memory stack, dùng LangGraph hoặc skeleton LangGraph, và có benchmark so sánh no-memory vs with-memory trên 10 multi-turn conversations.
+>
+> Học viên có thể trao đổi ý tưởng khi làm lab, nhưng bài nộp là **cá nhân**. Mỗi bài phải chạy độc lập và phản ánh phần triển khai/phân tích của chính người nộp.
 
 ---
 
@@ -18,6 +20,12 @@
 | 4. Benchmark 10 multi-turn conversations | 20 |
 | 5. Reflection privacy/limitations | 10 |
 | **Tổng** | **100** |
+
+**Lưu ý khi chấm bài cá nhân:**
+
+- Mỗi học viên được chấm trên chính file nộp của mình.
+- Nếu nhiều bài nộp giống hệt nhau, giảng viên/TA có thể yêu cầu giải thích lại hoặc demo lại để xác nhận mức độ hiểu bài.
+- Ưu tiên chấm khả năng giải thích kiến trúc, benchmark, và giới hạn của solution, không chỉ nhìn vào việc có đủ file.
 
 ---
 
@@ -44,7 +52,7 @@ Backend được chấp nhận:
 
 | Mức | Điểm | Mô tả |
 |-----|------|-------|
-| Tốt | 20-25 | Có đủ 4 memory types, interface rõ, mapping đúng vai trò từng loại |
+| Tốt | 20-25 | Bài nộp cá nhân có đủ 4 memory types, interface rõ, mapping đúng vai trò từng loại |
 | Trung bình | 10-19 | Có 3/4 memory types hoặc có 4 loại nhưng interface còn nhập nhằng |
 | Kém | 0-9 | Chỉ có short-term/profile, thiếu episodic hoặc semantic |
 
@@ -78,7 +86,7 @@ Lưu ý:
 
 | Mức | Điểm | Mô tả |
 |-----|------|-------|
-| Tốt | 24-30 | State/router rõ, prompt sạch, 4 loại memory được dùng đúng chỗ |
+| Tốt | 24-30 | State/router rõ, prompt sạch, 4 loại memory được dùng đúng chỗ, người nộp giải thích được flow |
 | Trung bình | 12-23 | Có state/router nhưng prompt còn rối, hoặc thiếu 1-2 section memory |
 | Kém | 0-11 | Không có router rõ ràng, hoặc memory không đi vào prompt |
 
@@ -103,7 +111,7 @@ Expected profile: allergy = đậu nành
 
 | Mức | Điểm | Mô tả |
 |-----|------|-------|
-| Tốt | 12-15 | Update đúng, episodic save có ý nghĩa, conflict handling rõ |
+| Tốt | 12-15 | Update đúng, episodic save có ý nghĩa, conflict handling rõ, có test hoặc demo cá nhân |
 | Trung bình | 6-11 | Có update nhưng conflict handling hoặc episodic save còn yếu |
 | Kém | 0-5 | Hầu như không save/update, hoặc lưu fact mâu thuẫn |
 
@@ -136,7 +144,7 @@ Không bắt buộc đo latency thật. Có thể dùng word count/character cou
 
 | Mức | Điểm | Mô tả |
 |-----|------|-------|
-| Tốt | 16-20 | Có 10 conversations rõ ràng, so sánh tốt, bao phủ đủ nhóm test |
+| Tốt | 16-20 | Bài nộp cá nhân có 10 conversations rõ ràng, so sánh tốt, bao phủ đủ nhóm test |
 | Trung bình | 8-15 | Có benchmark nhưng thiếu vài nhóm test hoặc mô tả còn sơ sài |
 | Kém | 0-7 | Không đủ 10 conversations hoặc không có no-memory vs with-memory |
 
@@ -160,7 +168,7 @@ Gợi ý reflection:
 
 | Mức | Điểm | Mô tả |
 |-----|------|-------|
-| Tốt | 8-10 | Reflection cụ thể, có privacy + limitation kỹ thuật rõ |
+| Tốt | 8-10 | Reflection cụ thể, có privacy + limitation kỹ thuật rõ, thể hiện hiểu biết của cá nhân người nộp |
 | Trung bình | 4-7 | Có reflection nhưng còn chung chung |
 | Kém | 0-3 | Không có reflection hoặc rất hời hợt |
 
@@ -168,7 +176,7 @@ Gợi ý reflection:
 
 ## Bonus
 
-Bonus chỉ dùng để phân biệt nhóm mạnh, không thay thế phần core.
+Bonus chỉ dùng để phân biệt các bài nộp mạnh, không thay thế phần core.
 
 | Bonus | Điểm gợi ý |
 |-------|------------:|
@@ -184,6 +192,7 @@ Nếu chương trình cần thang 100 cố định, dùng bonus để tie-break 
 
 ## Red flags khi chấm
 
+- Nhiều bài cá nhân giống hệt nhau ở code, benchmark, reflection.
 - Chỉ có short-term + profile, nhưng vẫn tự nhận là full memory stack.
 - Có LangGraph name-drop nhưng không có state/router thật.
 - Có database thật nhưng prompt không inject memory.
