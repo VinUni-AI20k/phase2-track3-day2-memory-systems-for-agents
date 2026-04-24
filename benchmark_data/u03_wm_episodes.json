@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "user_id": "u03_wm",
+    "summary": "User gặp lỗi kết nối database trong Docker, đã sửa bằng cách dùng docker service name thay vì localhost",
+    "outcome": "Dùng tên service docker thay vì localhost để kết nối container",
+    "tags": [
+      "debug",
+      "docker"
+    ],
+    "timestamp": "2026-04-24T11:51:15.204030"
+  },
+  {
+    "id": 2,
+    "user_id": "u03_wm",
+    "summary": "User hỏi: \"Tôi lại gặp lỗi kết nối trong Docker.\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Lần trước chúng ta đã giải quyết: [2026-04-24] User gặp lỗi kết nối database trong Docker, đã sửa bằng cách dùng docker ",
+    "tags": [
+      "debug",
+      "docker",
+      "profile"
+    ],
+    "timestamp": "2026-04-24T11:51:15.206671"
+  },
+  {
+    "id": 3,
+    "user_id": "u03_wm",
+    "summary": "User hỏi: \"Bạn còn nhớ lần trước chúng ta đã sửa lỗi Docker như thế nào không?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Lần trước chúng ta đã giải quyết: [2026-04-24] User gặp lỗi kết nối database trong Docker, đã sửa bằng cách dùng docker ",
+    "tags": [
+      "debug",
+      "docker",
+      "profile"
+    ],
+    "timestamp": "2026-04-24T11:51:15.207590"
+  }
+]

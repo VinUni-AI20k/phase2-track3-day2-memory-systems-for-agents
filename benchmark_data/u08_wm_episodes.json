@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "user_id": "u08_wm",
+    "summary": "User hỏi: \"Thực ra tên đầy đủ của tôi là Hưng Anh.\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng. Câu hỏi của bạn là: \"Thực ra tên đầy đủ của tôi là Hưng Anh.\"",
+    "tags": [
+      "profile"
+    ],
+    "timestamp": "2026-04-24T11:51:15.226269"
+  },
+  {
+    "id": 2,
+    "user_id": "u08_wm",
+    "summary": "User hỏi: \"Bạn còn nhớ tên tôi không?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tên bạn là **hưng**. Tôi đã ghi nhớ từ trước đó.",
+    "tags": [
+      "profile"
+    ],
+    "timestamp": "2026-04-24T11:51:15.226992"
+  }
+]

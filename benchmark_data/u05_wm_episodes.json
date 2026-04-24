@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"Transformer architecture hoạt động như thế nào? Bạn có thể giải thích chi tiết k\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.213019"
+  },
+  {
+    "id": 2,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"Attention mechanism là gì và tại sao nó quan trọng trong NLP?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Attention mechanism là ",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.213688"
+  },
+  {
+    "id": 3,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"Self-attention khác gì với cross-attention? Cho tôi ví dụ cụ thể.\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Self-attention khác gì ",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.215117"
+  },
+  {
+    "id": 4,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"BERT và GPT khác nhau ở điểm gì về kiến trúc?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"BERT và GPT khác nhau ở",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.216037"
+  },
+  {
+    "id": 5,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"Fine-tuning pre-trained models có những thách thức nào?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Fine-tuning pre-trained",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.216927"
+  },
+  {
+    "id": 6,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"Catastrophic forgetting là gì và làm sao để tránh?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi nhận được câu hỏi: \"Catastrophic forgetting là gì và làm sao để tránh?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.217661"
+  },
+  {
+    "id": 7,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"Kỹ thuật LoRA giúp giải quyết vấn đề gì trong fine-tuning?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Kỹ thuật LoRA giúp giải",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.218508"
+  },
+  {
+    "id": 8,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"Quantization có ảnh hưởng như thế nào đến hiệu suất model?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Quantization có ảnh hưở",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.219396"
+  },
+  {
+    "id": 9,
+    "user_id": "u05_wm",
+    "summary": "User hỏi: \"Bạn có thể tóm tắt những điểm quan trọng nhất về tối ưu LLM không?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi nhận được câu hỏi: \"Bạn có thể tóm tắt những điểm quan trọng nhất về tối ưu LLM không?\". Hiện tại tôi chưa có đủ ngữ",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.220272"
+  }
+]

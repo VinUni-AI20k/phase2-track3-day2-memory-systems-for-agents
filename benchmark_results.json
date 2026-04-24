@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "scenario": "Recall user name after 6 turns",
+    "group": "Profile recall",
+    "turns": [
+      {
+        "user": "Xin chào! Tên tôi là Linh.",
+        "agent_no_mem": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này.",
+        "agent_with_mem": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này."
+      },
+      {
+        "user": "Tôi đang học về machine learning.",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Tôi đang học về machine learning.\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng. Câu hỏi của bạn là: \"Tôi đang học về machine learning.\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Bạn có thể giải thích về neural networks không?",
+        "agent_no_mem": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+        "agent_with_mem": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?"
+      },
+      {
+        "user": "Cảm ơn, điều đó rất hữu ích.",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Cảm ơn, điều đó rất hữu ích.\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng, ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Cảm ơn, điều đó rất hữu ích.\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Tôi muốn tìm hiểu thêm về NLP.",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Tôi muốn tìm hiểu thêm về NLP.\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng, ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Tôi muốn tìm hiểu thêm về NLP.\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Bạn còn nhớ tên tôi không?",
+        "agent_no_mem": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này.",
+        "agent_with_mem": "Tên bạn là **linh**. Tôi đã ghi nhớ từ trước đó."
+      }
+    ],
+    "no_memory_result": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này.",
+    "with_memory_result": "Tên bạn là **linh**. Tôi đã ghi nhớ từ trước đó.",
+    "expected": "Agent with memory answers name correctly; no-memory agent does not know",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": -21.2,
+    "notes": "no-memory cannot recall name declared 5 turns ago"
+  },
+  {
+    "id": 2,
+    "scenario": "Allergy conflict: sữa bò → đậu nành",
+    "group": "Conflict update",
+    "turns": [
+      {
+        "user": "Tôi dị ứng sữa bò.",
+        "agent_no_mem": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?",
+        "agent_with_mem": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?"
+      },
+      {
+        "user": "À nhầm, tôi dị ứng đậu nành chứ không phải sữa bò.",
+        "agent_no_mem": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?",
+        "agent_with_mem": "Theo thông tin tôi lưu, bạn **dị ứng sữa bò**. Hãy tránh các thực phẩm liên quan."
+      },
+      {
+        "user": "Tôi bị dị ứng gì vậy?",
+        "agent_no_mem": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?",
+        "agent_with_mem": "Theo thông tin tôi lưu, bạn **dị ứng đậu nành**. Hãy tránh các thực phẩm liên quan."
+      }
+    ],
+    "no_memory_result": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?",
+    "with_memory_result": "Theo thông tin tôi lưu, bạn **dị ứng đậu nành**. Hãy tránh các thực phẩm liên quan.",
+    "expected": "profile.allergy = đậu nành (new value wins)",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": -4.2,
+    "notes": "Stored allergy in profile: 'đậu nành' — should be 'đậu nành'"
+  },
+  {
+    "id": 3,
+    "scenario": "Recall previous debug lesson (docker service name)",
+    "group": "Episodic recall",
+    "turns": [
+      {
+        "user": "Tôi lại gặp lỗi kết nối trong Docker.",
+        "agent_no_mem": "Tôi không có ký ức về các cuộc hội thoại trước của chúng ta trong session này.",
+        "agent_with_mem": "Lần trước chúng ta đã giải quyết: [2026-04-24] User gặp lỗi kết nối database trong Docker, đã sửa bằng cách dùng docker service name thay vì localhost → Dùng tên service docker thay vì localhost để kết nối container. Bạn có muốn áp dụng lại phương pháp đó không?"
+      },
+      {
+        "user": "Bạn còn nhớ lần trước chúng ta đã sửa lỗi Docker như thế nào không?",
+        "agent_no_mem": "Tôi không có ký ức về các cuộc hội thoại trước của chúng ta trong session này.",
+        "agent_with_mem": "Lần trước chúng ta đã giải quyết: [2026-04-24] User gặp lỗi kết nối database trong Docker, đã sửa bằng cách dùng docker service name thay vì localhost → Dùng tên service docker thay vì localhost để kết nối container. Bạn có muốn áp dụng lại phương pháp đó không?"
+      }
+    ],
+    "no_memory_result": "Tôi không có ký ức về các cuộc hội thoại trước của chúng ta trong session này.",
+    "with_memory_result": "Lần trước chúng ta đã giải quyết: [2026-04-24] User gặp lỗi kết nối database trong Docker, đã sửa bằng cách dùng docker service name thay vì localhost → Dùng tên service docker thay vì localhost để kết nối container. Bạn có muốn áp dụng lại phương pháp đó không?",
+    "expected": "With-memory agent references the past debug episode",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": -188.2,
+    "notes": "episode was pre-seeded to simulate a cross-session memory"
+  },
+  {
+    "id": 4,
+    "scenario": "Retrieve FAQ/policy chunk from semantic knowledge base",
+    "group": "Semantic retrieval",
+    "turns": [
+      {
+        "user": "Chính sách hoàn tiền của bạn là gì?",
+        "agent_no_mem": "Tôi không tìm thấy tài liệu liên quan trong knowledge base của session này.",
+        "agent_with_mem": "Theo knowledge base: **Chính sách hoàn tiền: Khách hàng có thể yêu cầu hoàn tiền trong vòng 30 ngày kể từ ngày mua hàng.**\n\nBạn cần thêm thông tin về phần nào không?"
+      },
+      {
+        "user": "Tôi mua hàng 25 ngày trước, tôi có thể hoàn tiền không?",
+        "agent_no_mem": "Tôi không có ký ức về các cuộc hội thoại trước của chúng ta trong session này.",
+        "agent_with_mem": "Lần trước chúng ta đã giải quyết: [2026-04-24] User hỏi: \"Chính sách hoàn tiền của bạn là gì?\" — Agent trả lời về chủ đề liên quan → Theo knowledge base: **Chính sách hoàn tiền: Khách hàng có thể yêu cầu hoàn tiền trong vòng 30 ngày kể từ ngày mua hàng.. Bạn có muốn áp dụng lại phương pháp đó không?"
+      }
+    ],
+    "no_memory_result": "Tôi không tìm thấy tài liệu liên quan trong knowledge base của session này.",
+    "with_memory_result": "Theo knowledge base: **Chính sách hoàn tiền: Khách hàng có thể yêu cầu hoàn tiền trong vòng 30 ngày kể từ ngày mua hàng.**\n\nBạn cần thêm thông tin về phần nào không?",
+    "expected": "With-memory agent returns the relevant FAQ chunk",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": -206.5,
+    "notes": "semantic store pre-loaded with 5 FAQ documents"
+  },
+  {
+    "id": 5,
+    "scenario": "Auto-trim: long conversation stays within token budget",
+    "group": "Token budget",
+    "turns": [
+      {
+        "user": "Xin chào, tôi tên là Minh và tôi đang nghiên cứu về deep learning.",
+        "agent_no_mem": "Xin chào! Tôi là AI assistant. Tôi có thể giúp gì cho bạn?",
+        "agent_with_mem": "Xin chào! Tôi là AI assistant. Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "user": "Transformer architecture hoạt động như thế nào? Bạn có thể giải thích chi tiết không?",
+        "agent_no_mem": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+        "agent_with_mem": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?"
+      },
+      {
+        "user": "Attention mechanism là gì và tại sao nó quan trọng trong NLP?",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Attention mechanism là gì và tại sao nó quan trọng trong NLP?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Attention mechanism là gì và tại sao nó quan trọng trong NLP?\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Self-attention khác gì với cross-attention? Cho tôi ví dụ cụ thể.",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Self-attention khác gì với cross-attention? Cho tôi ví dụ cụ thể.\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Self-attention khác gì với cross-attention? Cho tôi ví dụ cụ thể.\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "BERT và GPT khác nhau ở điểm gì về kiến trúc?",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"BERT và GPT khác nhau ở điểm gì về kiến trúc?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"BERT và GPT khác nhau ở điểm gì về kiến trúc?\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Fine-tuning pre-trained models có những thách thức nào?",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Fine-tuning pre-trained models có những thách thức nào?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Fine-tuning pre-trained models có những thách thức nào?\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Catastrophic forgetting là gì và làm sao để tránh?",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Catastrophic forgetting là gì và làm sao để tránh?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi nhận được câu hỏi: \"Catastrophic forgetting là gì và làm sao để tránh?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?"
+      },
+      {
+        "user": "Kỹ thuật LoRA giúp giải quyết vấn đề gì trong fine-tuning?",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Kỹ thuật LoRA giúp giải quyết vấn đề gì trong fine-tuning?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Kỹ thuật LoRA giúp giải quyết vấn đề gì trong fine-tuning?\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Quantization có ảnh hưởng như thế nào đến hiệu suất model?",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Quantization có ảnh hưởng như thế nào đến hiệu suất model?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Quantization có ảnh hưởng như thế nào đến hiệu suất model?\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Bạn có thể tóm tắt những điểm quan trọng nhất về tối ưu LLM không?",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Bạn có thể tóm tắt những điểm quan trọng nhất về tối ưu LLM không?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi nhận được câu hỏi: \"Bạn có thể tóm tắt những điểm quan trọng nhất về tối ưu LLM không?\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?"
+      }
+    ],
+    "no_memory_result": "Short-term buffer: 8 messages (max 8)",
+    "with_memory_result": "Short-term buffer: 8 messages (max 8) — oldest trimmed",
+    "expected": "Agent trims oldest turns; total prompt word count stays under budget",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": -18.0,
+    "notes": "After 10 turns, buffer capped at 8 messages"
+  },
+  {
+    "id": 6,
+    "scenario": "Combine profile (Python preference) + episodic (past ML project)",
+    "group": "Profile + episodic combo",
+    "turns": [
+      {
+        "user": "Tôi muốn bắt đầu một dự án computer vision mới.",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Tôi muốn bắt đầu một dự án computer vision mới.\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng, ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Tôi muốn bắt đầu một dự án computer vision mới.\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Bạn có thể recommend framework và nhắc lại kinh nghiệm của tôi không?",
+        "agent_no_mem": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+        "agent_with_mem": "Dựa trên sở thích của bạn, tôi recommend **python** cho dự án này."
+      }
+    ],
+    "no_memory_result": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+    "with_memory_result": "Dựa trên sở thích của bạn, tôi recommend **python** cho dự án này.",
+    "expected": "Agent recommends Python AND references past project experience",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": -18.5,
+    "notes": "profile + episodic pre-seeded; tests combined retrieval"
+  },
+  {
+    "id": 7,
+    "scenario": "Extract and recall: city (HCM) + preferred language (Python) + occupation (engineer)",
+    "group": "Multi-fact profile",
+    "turns": [
+      {
+        "user": "Tôi là kỹ sư phần mềm, tôi sống ở Hồ Chí Minh và tôi thích Python.",
+        "agent_no_mem": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+        "agent_with_mem": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?"
+      },
+      {
+        "user": "Tôi muốn tìm cộng đồng lập trình ở thành phố của tôi.",
+        "agent_no_mem": "Tôi không biết bạn đang sống ở đâu. Bạn có thể cho tôi biết không?",
+        "agent_with_mem": "Tôi không biết bạn đang sống ở đâu. Bạn có thể cho tôi biết không?"
+      },
+      {
+        "user": "Ngôn ngữ lập trình nào bạn recommend cho dự án của tôi?",
+        "agent_no_mem": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+        "agent_with_mem": "Dựa trên sở thích của bạn, tôi recommend **python** cho dự án này."
+      }
+    ],
+    "no_memory_result": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+    "with_memory_result": "Dựa trên sở thích của bạn, tôi recommend **python** cho dự án này.",
+    "expected": "All 3 facts stored and retrievable",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": 8.2,
+    "notes": "Profile stored: {'preferred_language': 'python', 'occupation': 'software engineer'}"
+  },
+  {
+    "id": 8,
+    "scenario": "Chained corrections: name Hùng→Hưng→Hưng Anh",
+    "group": "Conflict update (chained)",
+    "turns": [
+      {
+        "user": "Tên tôi là Hùng.",
+        "agent_no_mem": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này.",
+        "agent_with_mem": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này."
+      },
+      {
+        "user": "Xin lỗi, tôi nhập nhầm, tên đúng của tôi là Hưng.",
+        "agent_no_mem": "Tôi không có ký ức về các cuộc hội thoại trước của chúng ta trong session này.",
+        "agent_with_mem": "Tôi không có ký ức về các cuộc hội thoại trước của chúng ta trong session này."
+      },
+      {
+        "user": "Thực ra tên đầy đủ của tôi là Hưng Anh.",
+        "agent_no_mem": "Tôi nhận được câu hỏi: \"Thực ra tên đầy đủ của tôi là Hưng Anh.\". Hiện tại tôi chưa có đủ ngữ cảnh để trả lời chính xác. Bạn có thể cung cấp thêm thông tin không?",
+        "agent_with_mem": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng. Câu hỏi của bạn là: \"Thực ra tên đầy đủ của tôi là Hưng Anh.\". Bạn có thể nói rõ hơn để tôi hỗ trợ chính xác hơn không?"
+      },
+      {
+        "user": "Bạn còn nhớ tên tôi không?",
+        "agent_no_mem": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này.",
+        "agent_with_mem": "Tên bạn là **hưng**. Tôi đã ghi nhớ từ trước đó."
+      }
+    ],
+    "no_memory_result": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này.",
+    "with_memory_result": "Tên bạn là **hưng**. Tôi đã ghi nhớ từ trước đó.",
+    "expected": "Final profile name = 'hưng anh', each override applied in order",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": -3.7,
+    "notes": "Final stored name: 'hưng'"
+  },
+  {
+    "id": 9,
+    "scenario": "Cross-session: profile persists after reset_session()",
+    "group": "Cross-session recall",
+    "turns": [
+      {
+        "user": "Xin chào! Bạn còn nhớ tên tôi không?",
+        "agent_no_mem": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này.",
+        "agent_with_mem": "Tên bạn là **quỳnh**. Tôi đã ghi nhớ từ trước đó."
+      },
+      {
+        "user": "Tôi đang làm gì trong lần trước chúng ta nói chuyện?",
+        "agent_no_mem": "Tôi không có ký ức về các cuộc hội thoại trước của chúng ta trong session này.",
+        "agent_with_mem": "Lần trước chúng ta đã giải quyết: [2026-04-24] User hỏi: \"Tôi đang làm dự án về AI.\" — Agent trả lời về chủ đề liên quan → Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng. Câu hỏi của bạn là: \"Tôi đang làm dự án về AI.\". Bạn có thể n. Bạn có muốn áp dụng lại phương pháp đó không?"
+      }
+    ],
+    "no_memory_result": "Xin lỗi, tôi không có thông tin về tên của bạn trong session này.",
+    "with_memory_result": "Tên bạn là **quỳnh**. Tôi đã ghi nhớ từ trước đó.",
+    "expected": "Agent knows name in new session even though short-term was cleared",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": -151.6,
+    "notes": "session 1 reset; session 2 reads from persisted profile store"
+  },
+  {
+    "id": 10,
+    "scenario": "User requests deletion of allergy fact (right-to-erasure)",
+    "group": "Privacy / deletion",
+    "turns": [
+      {
+        "user": "Tôi dị ứng gluten. [then: delete_key('allergy')] → Tôi dị ứng gì?",
+        "agent_no_mem": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?",
+        "agent_with_mem": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?"
+      }
+    ],
+    "no_memory_result": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?",
+    "with_memory_result": "Tôi không tìm thấy thông tin dị ứng của bạn. Bạn có thể nhắc lại không?",
+    "expected": "allergy key removed from profile; agent no longer recalls it",
+    "pass_no_mem": true,
+    "pass_with_mem": true,
+    "token_saved_pct": 0.0,
+    "notes": "Key deleted: True. After deletion, agent should not recall 'gluten'."
+  }
+]

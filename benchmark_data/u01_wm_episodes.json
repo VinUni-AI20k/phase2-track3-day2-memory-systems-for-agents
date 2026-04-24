@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "user_id": "u01_wm",
+    "summary": "User hỏi: \"Tôi đang học về machine learning.\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng. Câu hỏi của bạn là: \"Tôi đang học về machine learning.\". Bạn ",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.199079"
+  },
+  {
+    "id": 2,
+    "user_id": "u01_wm",
+    "summary": "User hỏi: \"Bạn có thể giải thích về neural networks không?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi chưa biết ngôn ngữ lập trình bạn ưa thích. Bạn có thể cho tôi biết không?",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.199746"
+  },
+  {
+    "id": 3,
+    "user_id": "u01_wm",
+    "summary": "User hỏi: \"Cảm ơn, điều đó rất hữu ích.\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng, ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Cảm ơ",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.200376"
+  },
+  {
+    "id": 4,
+    "user_id": "u01_wm",
+    "summary": "User hỏi: \"Tôi muốn tìm hiểu thêm về NLP.\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng, ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Tôi m",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.201072"
+  },
+  {
+    "id": 5,
+    "user_id": "u01_wm",
+    "summary": "User hỏi: \"Bạn còn nhớ tên tôi không?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tên bạn là **linh**. Tôi đã ghi nhớ từ trước đó.",
+    "tags": [
+      "profile"
+    ],
+    "timestamp": "2026-04-24T11:51:15.201662"
+  }
+]

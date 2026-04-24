@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "user_id": "u06_wm",
+    "summary": "User đã hoàn thành dự án phân loại ảnh với PyTorch đạt accuracy 94%",
+    "outcome": "Dự án thành công, dùng ResNet50 transfer learning",
+    "tags": [
+      "python",
+      "pytorch",
+      "ml"
+    ],
+    "timestamp": "2026-04-24T11:51:15.221334"
+  },
+  {
+    "id": 2,
+    "user_id": "u06_wm",
+    "summary": "User hỏi: \"Tôi muốn bắt đầu một dự án computer vision mới.\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Tôi đang xử lý yêu cầu của bạn dựa trên: hồ sơ người dùng, ký ức về các cuộc hội thoại trước. Câu hỏi của bạn là: \"Tôi m",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.221860"
+  },
+  {
+    "id": 3,
+    "user_id": "u06_wm",
+    "summary": "User hỏi: \"Bạn có thể recommend framework và nhắc lại kinh nghiệm của tôi không?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Dựa trên sở thích của bạn, tôi recommend **python** cho dự án này.",
+    "tags": [
+      "python"
+    ],
+    "timestamp": "2026-04-24T11:51:15.222537"
+  }
+]

@@ -2,7 +2,7 @@
 
 **Mục đích:** Chấm bài Lab #17 bản 2 giờ, đúng theo slide.  
 **Tổng điểm:** 100 điểm.  
-**Hình thức nộp:** Nhóm nộp source/notebook + data files + `BENCHMARK.md`.
+**Hình thức nộp:** Cá nhân nộp source/notebook + data files + `BENCHMARK.md`.
 
 > Lab #17 chấm theo mục tiêu: agent có full memory stack, dùng LangGraph hoặc skeleton LangGraph, và có benchmark so sánh no-memory vs with-memory trên 10 multi-turn conversations.
 
@@ -168,7 +168,7 @@ Gợi ý reflection:
 
 ## Bonus
 
-Bonus chỉ dùng để phân biệt nhóm mạnh, không thay thế phần core.
+Bonus chỉ dùng để phân biệt cá nhân xuất sắc, không thay thế phần core.
 
 | Bonus | Điểm gợi ý |
 |-------|------------:|

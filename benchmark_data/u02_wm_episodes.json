@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "user_id": "u02_wm",
+    "summary": "User hỏi: \"À nhầm, tôi dị ứng đậu nành chứ không phải sữa bò.\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Theo thông tin tôi lưu, bạn **dị ứng sữa bò**. Hãy tránh các thực phẩm liên quan.",
+    "tags": [
+      "allergy"
+    ],
+    "timestamp": "2026-04-24T11:51:15.203061"
+  },
+  {
+    "id": 2,
+    "user_id": "u02_wm",
+    "summary": "User hỏi: \"Tôi bị dị ứng gì vậy?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Theo thông tin tôi lưu, bạn **dị ứng đậu nành**. Hãy tránh các thực phẩm liên quan.",
+    "tags": [
+      "allergy"
+    ],
+    "timestamp": "2026-04-24T11:51:15.203557"
+  }
+]

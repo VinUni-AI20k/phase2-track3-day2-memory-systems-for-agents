@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "user_id": "u04_wm",
+    "summary": "User hỏi: \"Chính sách hoàn tiền của bạn là gì?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Theo knowledge base: **Chính sách hoàn tiền: Khách hàng có thể yêu cầu hoàn tiền trong vòng 30 ngày kể từ ngày mua hàng.",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.211268"
+  },
+  {
+    "id": 2,
+    "user_id": "u04_wm",
+    "summary": "User hỏi: \"Tôi mua hàng 25 ngày trước, tôi có thể hoàn tiền không?\" — Agent trả lời về chủ đề liên quan",
+    "outcome": "Lần trước chúng ta đã giải quyết: [2026-04-24] User hỏi: \"Chính sách hoàn tiền của bạn là gì?\" — Agent trả lời về chủ đề",
+    "tags": [],
+    "timestamp": "2026-04-24T11:51:15.212222"
+  }
+]
